@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Curiosity Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Daily Curiosity Hub</h1>
+        <nav>
+            <a href="#archive">Archive</a>
+            <a href="#submit">Submit</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="daily-fact">
+            <h2 id="current-date"></h2>
+            <p id="fact">Today’s oddity: In 1952, a cloud in Nevada was measured to weigh over 1,000 pounds due to an unusual condensation event.</p>
+        </section>
+        <section id="archive">
+            <h2>Archive</h2>
+            <ul id="archive-list">
+                <li>March 23, 2025: The shortest war in history lasted 38 minutes.</li>
+                <li>March 22, 2025: Octopuses have three hearts but can’t hear.</li>
+            </ul>
+        </section>
+        <section id="submit">
+            <h2>Submit Your Curiosity</h2>
+            <form id="submit-form">
+                <label for="curiosity">Your Curiosity:</label><br>
+                <textarea id="curiosity" name="curiosity" rows="4" cols="50" placeholder="Share something weird or wonderful..." required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="submit-message" style="display: none;">Thanks for submitting! It’s now in the archive.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>A daily dose of weird and wonderful facts. Built by a curious mind, for curious minds.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Daily Curiosity Hub</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
